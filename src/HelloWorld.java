@@ -8,11 +8,12 @@ public class HelloWorld {
         System.out.print("Hello, " + name + "\n");
 
         // Weißt automatisch zu
-        var gesamtalter = 40;
-        //int gesamtalter = 40;
+        var gesamtalter = 5;
+        //int gesamtalter = 5;
 
-        // Wird geteilt und gesetzt
-        double durchschnitt = 40/3;
+        // Wird in double converiter dann geteilt und gesetzt
+        var durchschnitt = (double) gesamtalter/2;
+        // double durchschnitt = (double) gesamtalter/2;
 
         System.out.println(gesamtalter + " " + durchschnitt);
     }
