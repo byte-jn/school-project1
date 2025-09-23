@@ -12,12 +12,17 @@ public class VerbrauchBenzin {
             System.out.print("Gib die verbrauchten Liter ein:"); // Info in der Konsole ausgeben
             double literBenzin = input.nextDouble();
 
-            System.out.print("\n");
+            if (literBenzin <= 0) {
+                System.out.print("Das ist unmöglich");
+            }
+            else {
+                System.out.print("\n");
 
-            if (strecke < 0) strecke *= -1;
-            double verbrauch = literBenzin * 100 / strecke;
-            verbrauch = ((double) Math.round(verbrauch * 100)) / 100;
-            System.out.print("Dein Verbrauch liegt bei " + verbrauch + " l/100km");
+                if (strecke < 0) strecke *= -1;
+                double verbrauch = literBenzin * 100 / strecke;
+                verbrauch = ((double) Math.round(verbrauch * 100)) / 100;
+                System.out.print("Dein Verbrauch liegt bei " + verbrauch + " l/100km");
+            }
         }
     }
 }
