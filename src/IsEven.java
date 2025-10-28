@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class IsNumEven {
+public class IsEven {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Gib die Zahl ein:");
@@ -8,14 +8,14 @@ public class IsNumEven {
 
         boolean isEven = ((num % 2) == 0);
 
-        System.out.println(isEven);
+        System.out.println(isEven); // ture / false
 
         if (isEven) {
-            num *= 2;
+            num *= 2; // if even *2
         } else {
-            num += 1;
+            num += 1; // if not even +1
         }
 
-        System.out.println(num); // true / false
+        System.out.println(num); // Wert
     }
 }
