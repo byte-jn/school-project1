@@ -104,10 +104,17 @@ public class BuildBoolean {
             pictures.add(new Picture(ab, pixel, pixel.size()));
         }
 
-        System.out.println(pictures);
-
+        for (int ab = 0; ab < anzahlBilder; ab++) {
+            System.out.println(pictures.get(ab);
+            i = -1;
+            for (int b = -1; b < bmax; b++) {
+                for (int h = -1; h < hmax; h++) {
+                    i++;
+                    System.out.println(pictures.get(ab).pixel.get().name);
+                }
+            }
+        }
         System.out.println(((double) Math.round(pixel.size()*bytePix*anzahlBilder/1024/1024/1024*100))/100);
-
 
     }
 }
