@@ -11,6 +11,7 @@ public class Bild {
 
         double countPicture = getNumberInput("Anzahl Bilder:");
 
+        // double gesamt = ((double) Math.round((h*b*bytePix*countPicture/1024/1024/1024*100))/100);
         System.out.println("Ihre Sammlung ist " + (((double) Math.round(h*b*bytePix*countPicture/1024/1024/1024*100))/100) + "GB groß");
     }
 
