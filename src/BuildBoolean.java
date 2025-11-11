@@ -105,12 +105,12 @@ public class BuildBoolean {
         }
 
         for (int ab = 0; ab < anzahlBilder; ab++) {
-            System.out.println(pictures.get(ab);
+            System.out.println(pictures.get(ab));
             i = -1;
             for (int b = -1; b < bmax; b++) {
                 for (int h = -1; h < hmax; h++) {
                     i++;
-                    System.out.println(pictures.get(ab).pixel.get().name);
+                    System.out.println(pictures.get(ab).pixel.get(i).name);
                 }
             }
         }
