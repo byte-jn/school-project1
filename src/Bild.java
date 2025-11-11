@@ -9,9 +9,9 @@ public class Bild {
 
         int bytePix = getByteSize();
 
-        double anzahlBilder = getNumberInput("Anzahl Bilder:");
+        double countPicture = getNumberInput("Anzahl Bilder:");
 
-        System.out.println("Ihre Sammlung ist " + (((double) Math.round(h*b*bytePix*anzahlBilder/1024/1024/1024*100))/100) + "GB groß");
+        System.out.println("Ihre Sammlung ist " + (((double) Math.round(h*b*bytePix*countPicture/1024/1024/1024*100))/100) + "GB groß");
     }
 
     public static Integer colorCodeToByteSize(String colorCode) {
