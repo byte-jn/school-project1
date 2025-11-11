@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class Bild {
     public static void main(String[] args) {
 
-        int h = (int) getNumberInput("Gib die gewünschten Höhe ein:");
+        int h = getNumberInput("Gib die gewünschten Höhe ein:");
 
-        int b = (int) getNumberInput("Gib die gewünschten Beite ein:");
+        int b = getNumberInput("Gib die gewünschten Beite ein:");
 
         int bytePix = getByteSize();
 
-        double countPicture = getNumberInput("Anzahl Bilder:");
+        int countPicture = getNumberInput("Anzahl Bilder:");
 
         // double gesamt = ((double) Math.round((h*b*bytePix*countPicture/1024/1024/1024*100))/100);
-        System.out.println("Ihre Sammlung ist " + (((double) Math.round(h*b*bytePix*countPicture/1024/1024/1024*100))/100) + "GB groß");
+        System.out.println("Ihre Sammlung ist " + (((double) Math.round(h*b*bytePix*((double) countPicture)/1024/1024/1024*100))/100) + " GiB groß");
     }
 
     public static Integer colorCodeToByteSize(String colorCode) {
@@ -21,8 +21,42 @@ public class Bild {
             case "g" -> 2; // Graustufen
             case "f" -> 3; // Farbbild
             case "c" -> 4; // CMYK
-            default -> null;
+            default -> null; // Nichts
         };
+
+//        Integer result;
+//        switch (colorCode) {
+//            case "sw":
+//                result = 1; // Schwarzweißbild
+//                break;
+//            case "g":
+//                result = 2; // Graustufen
+//                break;
+//            case "f":
+//                result = 3; // Farbbild
+//                break;
+//            case "c":
+//                result = 4; // CMYK
+//                break;
+//            default:
+//                result = null; // Nichts
+//                break;
+//        };
+//        return result;
+
+//        Integer result;
+//        if (colorCode.equals("sw")) {
+//            result = 1; // Schwarzweißbild
+//        } else if (colorCode.equals("g")) {
+//            result = 2; // Graustufen
+//        } else if (colorCode.equals("f")) {
+//            result = 3; // Farbbild
+//        } else if (colorCode.equals("c")) {
+//            result = 4; // CMYK
+//        } else {
+//            result = null;
+//        }
+//        return result;
     }
 
     public static int getByteSize() {
@@ -35,9 +69,8 @@ public class Bild {
     }
 
     public static String getStringInput(String request) {
+        Scanner s = new Scanner(System.in);
         while (true) {
-            Scanner s = new Scanner(System.in);
-
             System.out.print(request);
             String input = s.nextLine();
 
@@ -47,10 +80,10 @@ public class Bild {
         }
     }
 
-    public static double getNumberInput(String request) {
+    public static int getNumberInput(String request) {
         Scanner s = new Scanner(System.in);
 
         System.out.print(request);
-        return s.nextDouble();
+        return s.nextInt();
     }
 }
