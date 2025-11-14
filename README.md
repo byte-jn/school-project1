@@ -26,10 +26,17 @@ Programme mit Verzweigungen und bedingter Logik:
 - **[IsEven.java](src/Verzweigungen_2/IsEven.java)** - Prüfung auf gerade/ungerade Zahlen
 - **[BuildBoolean.java](src/Verzweigungen_2/BuildBoolean.java)** - Boolean-Logik und Bedingungen
 - **[AdvancedArray.java](src/Verzweigungen_2/AdvancedArray.java)** - Erweiterte Array-Operationen
-- **[Bild.java](src/Verzweigungen_2/Bild.java)** - Bildverarbeitung mit Arrays
+- **[Bild.java](src/Verzweigungen_2/Bild.java)** - Bildverarbeitung
 - **[VerbrauchBenzin.java](src/Verzweigungen_2/VerbrauchBenzin.java)** - Benzinverbrauchsberechnung
 
-**Fokus:** if-else Verzweigungen, Boolean-Logik, Methoden, Arrays
+**Fokus:** if-else Verzweigungen, Boolean-Logik, Methoden
+
+### _OutOfContext - Erweiterte Programme
+Zusätzliche Programme und erweiterte Konzepte:
+- **[AdvancedArray.java](src/_OutOfContext/AdvancedArray.java)** - Erweiterte Array-Operationen mit ArrayList
+- **[BuildBoolean.java](src/_OutOfContext/BuildBoolean.java)** - Objektorientierte Programmierung mit Klassen und Boolean-Logik
+
+**Fokus:** ArrayList, Objektorientierung, Switch-Case, Packages
 
 ## Zweck
 Mitschriften und praktische Übungen zum Erlernen der Java-Programmiergrundlagen im Schulkontext.

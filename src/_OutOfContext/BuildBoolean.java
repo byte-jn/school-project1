@@ -1,4 +1,5 @@
-import javax.naming.PartialResultException;
+package _OutOfContext;
+
 import java.util.*;
 
 class Color {
