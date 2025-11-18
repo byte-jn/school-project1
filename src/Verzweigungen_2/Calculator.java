@@ -16,7 +16,24 @@ public class Calculator {
         System.out.print("Gib die zweite Zahl ein: ");
         double y = input.nextDouble();
 
+        validateOperator(op);
+        if (op.equals("/")) {
+            validateDivision(y);
+        }
+
         System.out.println("Ergebnis: " + calc(x, y, op));
+    }
+
+    public static void validateOperator(String op) {
+        if (!op.equals("+") && !op.equals("-") && !op.equals("*") && !op.equals("/")) {
+            System.out.println("Fehler: Ungültiger Operator");
+        }
+    }
+
+    public static void validateDivision(double y) {
+        if (y == 0) {
+            System.out.println("Fehler: Division durch Null");
+        }
     }
 
     public static double calc(double x, double y, String op) {
