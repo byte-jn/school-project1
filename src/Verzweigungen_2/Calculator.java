@@ -17,10 +17,6 @@ public class Calculator {
         double y = input.nextDouble();
 
         validateOperator(op);
-        if (op.equals("/")) {
-            validateDivision(y);
-        }
-
         System.out.println("Ergebnis: " + calc(x, y, op));
     }
 
@@ -45,12 +41,8 @@ public class Calculator {
             case "*":
                 return (x * y);
             case "/":
-                if (y != 0) {
-                    return (x / y);
-                } else {
-                    System.out.println("Fehler: Division durch Null");
-                    return 0;
-                }
+                validateDivision(y);
+                return (x / y);
             default:
                 System.out.println("Fehler: Ungültiger Operator");
                 return 0;
