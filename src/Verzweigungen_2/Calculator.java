@@ -45,7 +45,7 @@ public class Calculator {
                 validateDivision(y);
                 return (x / y);
             default:
-                System.out.println("Fehler: Ungültiger Operator");
+                System.out.println("Fehler: ?");
                 System.exit(1);
                 return 0; // Unreachable, but required for compilation
         }
