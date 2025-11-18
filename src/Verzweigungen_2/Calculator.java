@@ -10,8 +10,7 @@ public class Calculator {
         double x = input.nextDouble();
 
         System.out.print("Gib den Operator ein (+, -, *, /): ");
-        String op = input.next();
-        input.nextLine(); // Puffer leeren
+        char op = input.next().charAt(0);
 
         System.out.print("Gib die zweite Zahl ein: ");
         double y = input.nextDouble();
@@ -20,32 +19,35 @@ public class Calculator {
         System.out.println("Ergebnis: " + calc(x, y, op));
     }
 
-    public static void validateOperator(String op) {
-        if (!op.equals("+") && !op.equals("-") && !op.equals("*") && !op.equals("/")) {
+    public static void validateOperator(char op) {
+        if (op != '+' && op != '-' && op != '*' && op != '/') {
             System.out.println("Fehler: Ungültiger Operator");
+            System.exit(1);
         }
     }
 
     public static void validateDivision(double y) {
         if (y == 0) {
             System.out.println("Fehler: Division durch Null");
+            System.exit(1);
         }
     }
 
-    public static double calc(double x, double y, String op) {
+    public static double calc(double x, double y, char op) {
         switch (op) {
-            case "+":
+            case '+':
                 return (x + y);
-            case "-":
+            case '-':
                 return (x - y);
-            case "*":
+            case '*':
                 return (x * y);
-            case "/":
+            case '/':
                 validateDivision(y);
                 return (x / y);
             default:
                 System.out.println("Fehler: Ungültiger Operator");
-                return 0;
+                System.exit(1);
+                return 0; // Unreachable, but required for compilation
         }
     }
 }
