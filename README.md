@@ -1,4 +1,4 @@
-# School Project
+# School Project 1 aus TLS
 
 Eine Sammlung von Java-Übungsprogrammen aus dem Schulunterricht zum Erlernen der Java-Programmierung.
 
