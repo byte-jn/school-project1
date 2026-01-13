@@ -30,7 +30,7 @@ public class DurchschnittsTemperatur {
     public static double durchschnittRechnen() {
         // Scanner zur Eingabe der Temperaturen
         Scanner scanner = new Scanner(System.in);
-        double summe = 0;
+        double tempSum = 0;
 
         // Eingabe der Anzahl der Temperaturen
         System.out.println("Wie viele Temperaturen möchten Sie eingeben?");
@@ -42,13 +42,13 @@ public class DurchschnittsTemperatur {
             System.out.println("Geben Sie bitte die " + (i+1) + ". Temperatur ein");
 
             // Einlesen der Temperatur
-            summe += scanner.nextDouble();
+            tempSum += scanner.nextDouble();
         }
 
         scanner.close();
 
         // Berechnung und Rückgabe des Durchschnitts
-        return summe / anzahl;
+        return tempSum / anzahl;
     }
 
     /**
