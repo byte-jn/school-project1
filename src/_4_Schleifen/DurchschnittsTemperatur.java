@@ -23,6 +23,10 @@ public class DurchschnittsTemperatur {
         }
     }
 
+    /**
+     * Methode zur Berechnung der Durchschnittstemperatur
+     * @return Durchschnittstemperatur
+     */
     public static double durchschnittRechnen() {
         // Scanner zur Eingabe der Temperaturen
         Scanner scanner = new Scanner(System.in);
@@ -47,6 +51,11 @@ public class DurchschnittsTemperatur {
         return summe / anzahl;
     }
 
+    /**
+     * Methode zum Vergleich der Durchschnittstemperatur mit dem langjährigen Mittelwert
+     * @param temp Durchschnittstemperatur
+     * @return 1 wenn über dem Mittelwert, -1 wenn unter dem Mittelwert, 0 wenn gleich dem Mittelwert
+     */
     public static int vergleicheTemperaturen(double temp) {
         // Langjähriger Mittelwert
         double langwaerigerMittelwert = 20.0;
