@@ -13,23 +13,23 @@ public class StromanbieterTestKlassenarbeit {
             double kostenProKWh = 0;
 
             System.out.println("Kundenart (p: privat, b: business): ");
-            String kundenart = scanner.nextLine();
+            String kundenart = scanner.next();
 
-            if (kundenart == "p") {
+            if (kundenart.equals("p")) {
                 System.out.println("Tarif (öko: ÖkoStrom, pp: PowerPack): ");
-                String traif = scanner.nextLine();
+                String traif = scanner.next();
 
-                if (traif == "öko") {
+                if (traif.equals("öko")) {
                     summe = 165.50;
                     kostenProKWh = 37.15;
-                } else if (traif == "pp") {
+                } else if (traif.equals("pp")) {
                     summe = 730;
                     freiKWh = 2000;
                     kostenProKWh = 34.40;
                 } else {
                     System.out.println("Ungültiger Tarif für Privatkunden.");
                 }
-            } else if (kundenart == "b") {
+            } else if (kundenart.equals("b")) {
                 summe = 131.5;
                 kostenProKWh = 31.15;
             } else {
@@ -42,7 +42,7 @@ public class StromanbieterTestKlassenarbeit {
             }
 
             System.out.println("Möchten Sie eine weitere Berechnung durchführen? (j/n): ");
-            String weitereBerechnung = scanner.nextLine();
+            String weitereBerechnung = scanner.next();
             if (weitereBerechnung.equals("n")) {
                 break;
             }
