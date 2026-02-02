@@ -17,12 +17,12 @@ public class StromanbieterTestKlassenarbeit {
 
             if (kundenart.equals("p")) {
                 System.out.println("Tarif (öko: ÖkoStrom, pp: PowerPack): ");
-                String traif = scanner.next();
+                String tarif = scanner.next();
 
-                if (traif.equals("öko")) {
+                if (tarif.equals("öko")) {
                     summe = 165.50;
                     kostenProKWh = 37.15;
-                } else if (traif.equals("pp")) {
+                } else if (tarif.equals("pp")) {
                     summe = 730;
                     freiKWh = 2000;
                     kostenProKWh = 34.40;
