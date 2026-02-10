@@ -10,6 +10,13 @@ public class NumberToMonth {
         System.out.println(numberToMonth(input.nextInt()));
     }
 
+    /**
+     * Validates if the given number is between 1 and 12 (inclusive).
+     * If the number is invalid, it prints an error message and exits the program.
+     * @param number the month number to validate
+     * @throws IllegalArgumentException if the number is not between 1 and 12
+     * @return void
+     */
     public static void validateMonthNumber(int number) {
         if (number < 1 || number > 12) {
             System.out.println("Fehler: Invaild month number");
@@ -17,6 +24,11 @@ public class NumberToMonth {
         }
     }
 
+    /**
+     * Converts a month number (1-12) to its corresponding month name in German.
+     * @param number
+     * @return String the name of the month corresponding to the given number, or "Offset Error" if the number is invalid
+     */
     public static String numberToMonth(int number) {
         return switch (number) {
             case 1 -> "Januar";
