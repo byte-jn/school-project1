@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Ausgabe von Mitarbeiterdaten
+ */
 public class Mitarbeiterdaten {
     public static void main(String[] args) {
         int id = 3;

@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Begruessung des Nutzers und Verdopplung einer eingegebenen Zahl
+ */
 public class MeinName {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); // Scanner Objekt erzeugt

@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Division zweier Zahlen mit Ergebnis und Rest
+ */
 public class Division {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); // Scanner Objekt erzeugt

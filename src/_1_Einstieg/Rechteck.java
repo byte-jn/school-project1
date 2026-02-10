@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Berechnung von Flaeche und Umfang eines Rechtecks
+ */
 public class Rechteck {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); // Scanner Objekt erzeugt
