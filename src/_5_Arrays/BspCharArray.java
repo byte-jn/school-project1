@@ -27,6 +27,9 @@ public class BspCharArray {
                 break;
             }
         }
+
+        System.out.println("\nProgramm wird beendet.\nVielen Dank für die Nutzung des Programms!");
+        s.close();
     }
 
     /**
@@ -36,8 +39,7 @@ public class BspCharArray {
      */
     private static boolean check(char[] zeichen) {
         for (char c : zeichen) {
-            boolean valid = checkValid(c);
-            if (!valid) {
+            if (!checkValid(c)) {
                 return false;
             }
         }
