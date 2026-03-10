@@ -51,6 +51,15 @@ Programme mit for- und while-Schleifen:
 
 **Fokus:** for- und while-Schleifen, Zähl- und Abbruchbedingungen, einfache Algorithmen
 
+### _5_Arrays - Arbeiten mit Arrays
+Programme und Übungen zum Umgang mit Arrays:
+- **[BspCharArray.java](src/_5_Arrays/BspCharArray.java)** - Beispiel für die Verwendung von Char-Arrays
+- **[DurchschnittsTemperatur.java](src/_5_Arrays/DurchschnittsTemperatur.java)** - Durchschnittsberechnung mit Arrays
+- **[DynamischDurchschnittsTemperatur.java](src/_5_Arrays/DynamischDurchschnittsTemperatur.java)** - Dynamische Temperaturberechnung mit Arrays
+- **[Feld.java](src/_5_Arrays/Feld.java)** - Grundlagen der Array-Nutzung
+
+**Fokus:** Array-Deklaration, Zugriff auf Elemente, Schleifen mit Arrays, dynamische Arrays
+
 ### _OutOfContext - Erweiterte Programme
 Zusätzliche Programme und erweiterte Konzepte:
 - **[AdvancedArray.java](src/_OutOfContext/AdvancedArray.java)** - Erweiterte Array-Operationen mit ArrayList
