@@ -1,4 +1,4 @@
-package _OutOfContext;
+package OutOfContext;
 
 public class DecBin {
     final static int limit = 97;

@@ -1,4 +1,4 @@
-package _OutOfContext;
+package OutOfContext;
 
 public class RecusiveSum {
     final static int limit = 100;
